@@ -21,6 +21,7 @@ optional arguments:
 Example:
 
 mkdir property
+
 python3 benchmark_maker.py -o 1 -t 2 -e 0.02 -d ./property -n 10
 
 This will dump 10 target attack queries about 10 different training points
