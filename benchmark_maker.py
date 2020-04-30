@@ -16,7 +16,7 @@ def parse_args():
                    help='Targeted label')
     p.add_argument('-f', "--filename", default="robustness", help="The prefix of the generated property files")
     p.add_argument('-d', '--dump-directory', default="./", help = 'The directory to dump the property file')
-    p.add_argument('-n', '--number-of-properties', default=1, help="Number of properties to dump")
+    p.add_argument('-n', '--number-of-properties', type=int, default=1, help="Number of properties to dump")
     p.add_argument("-s", "--seed", default=0, type=int, help="random seed for getting training point")
     # parse arguments
     opts = p.parse_args()
